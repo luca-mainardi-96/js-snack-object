@@ -52,8 +52,26 @@ const auto = [
 
 ]
 
-console.log(auto)
+// console.log(auto)
 
 const autoBenzina = []
 const autoDiesel = []
 const restoAuto = []
+
+for (let i=0; i<auto.length; i++){
+    const elemento = auto[i]
+    // console.log(i, auto[i].alimentazione)
+    if (auto[i].alimentazione === 'Benzina'){
+        autoBenzina.push(elemento)
+    } else if (auto[i].alimentazione === 'Diesel'){
+        autoDiesel.push(elemento)
+    } else {
+        restoAuto.push(elemento)
+    }
+}
+
+
+
+console.log(autoBenzina)
+console.log(autoDiesel)
+console.log(restoAuto)
