@@ -25,9 +25,6 @@ for (let i=0; i<parole.length; i++){
    // firstChar = firstChar.toLocaleUpperCase()
    const restoParola = parola.slice(1).toLowerCase()
    // restoParola = restoParola.toLowerCase()
-
-  paroleFormattate.push(firstChar+restoParola)
-
-  console.log(paroleFormattate)
-
+   paroleFormattate.push(firstChar+restoParola)
+   console.log(paroleFormattate)
 }

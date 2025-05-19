@@ -27,14 +27,16 @@ const persone = [
 ]
 console.log(persone)
 
-const puoGuidare = []
+const messaggi = []
 
 for ( let i=0; i<persone.length; i++){
     const persona = persone[i]
     console.log(i, persona)
     if (persona.eta>=18){
-        puoGuidare.push(`${persona.nome} ${persona.cognome} può guidare`)
+        messaggi.push(`${persona.nome} ${persona.cognome} può guidare.`)
+    } else {
+        messaggi.push(`${persona.nome} ${persona.cognome} non può guidare.`)
     }
 }
 
-console.log(puoGuidare)
+console.log(messaggi)
